@@ -54,3 +54,5 @@ if __name__ == '__main__':
         product = scrape_product(url)
         store_product(product)
         print(f"Stored product: {product}")
+
+        
