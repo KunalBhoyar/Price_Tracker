@@ -55,4 +55,8 @@ if __name__ == '__main__':
         store_product(product)
         print(f"Stored product: {product}")
 
+
+
         
+
+
