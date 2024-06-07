@@ -6,16 +6,24 @@ from webdriver_manager.chrome import ChromeDriverManager
 from pymongo import MongoClient
 from urllib.parse import quote_plus
 
+
+
 # Read MongoDB credentials from environment variables
 MONGO_USER = os.getenv('MONGO_USER')
 MONGO_PASS = os.getenv('MONGO_PASS')
+
+
 
 # Escape MongoDB credentials
 MONGO_USER_ESCAPED = quote_plus(MONGO_USER)
 MONGO_PASS_ESCAPED = quote_plus(MONGO_PASS)
 
+
+
+
 # Connect to MongoDB
 client = MongoClient(f'mongodb://{MONGO_USER_ESCAPED}:{MONGO_PASS_ESCAPED}@localhost:27017/price_monitor')
+print(client)
 db = client['price_monitor']
 collection = db['products']
 
