@@ -1,0 +1,18 @@
+{
+    "ebay": {
+      "url": "https://www.ebay.com/sch/i.html?_nkw=",
+      "result_link_css": "a.s-item__link",
+      "price_css": "span.s-item__price"
+    },
+    "flipkart": {
+      "url": "https://www.flipkart.com/search?q=",
+      "result_link_css": "a._1fQZEK",
+      "price_css": "div._30jeq3"
+    },
+    "amazon_uk": {
+      "url": "https://www.amazon.co.uk/s?k=",
+      "result_link_css": "a.a-link-normal.a-text-normal",
+      "price_css": "span.a-price-whole"
+    }
+  }
+  
